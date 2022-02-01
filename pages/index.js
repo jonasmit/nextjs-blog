@@ -15,7 +15,7 @@ export default function Home() {
       <section className={utilStyles.headingMd}>
         <p>Hello, I'm Jon.</p>
       </section>
-     
+
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Featured Courses</h2>
         <ul className={utilStyles.list}>

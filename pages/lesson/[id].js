@@ -1,11 +1,12 @@
 import Layout from "../../components/layout";
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import { getAllLessonIds, getLessonData } from "../../lib/posts";
 import Date from "../../components/date";
 import Head from "next/head";
 import utilStyles from "../../styles/utils.module.css";
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
+  const postData = await getLessonData(params.id);
+
   return {
     props: {
       postData,
@@ -14,14 +15,14 @@ export async function getStaticProps({ params }) {
 }
 
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = getAllLessonIds();
   return {
     paths,
     fallback: false,
   };
 }
 
-export default function Post({ postData }) {
+export default function Lesson({ postData }) {
   return (
     <Layout>
       <Head>
