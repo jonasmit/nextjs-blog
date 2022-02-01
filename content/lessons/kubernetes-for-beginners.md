@@ -1,5 +1,5 @@
 ---
-title: "Two Forms of Pre-rendering"
+title: "Kubernetes For Beginners"
 date: "2020-01-01"
 course: "kubernetes-for-beginners"
 ---
