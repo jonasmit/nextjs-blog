@@ -1,0 +1,32 @@
+{
+    "courses": [
+      {
+        "duration": "30",
+        "title": "Kubernetes For Beginners",
+        "id": "kubernetes-for-beginners",
+        "date": "2021-01-02",
+        "lessons": "8"
+      },
+      {
+        "duration": "120",
+        "title": "Kubernetes Concepts",
+        "id": "kubernetes-concepts",
+        "date": "2021-01-04",
+        "lessons": "4"
+      },
+      {
+        "duration": "39",
+        "title": "Kubernetes for Executives",
+        "id": "kubernetes-for-executives",
+        "date": "2021-01-11",
+        "lessons": "13"
+      },
+      {
+        "duration": "28",
+        "title": "Hands On With Kubernetes",
+        "id": "hands-on-with-kubernetes",
+        "date": "2021-01-20",
+        "lessons": "11"
+      }
+    ]
+  }
