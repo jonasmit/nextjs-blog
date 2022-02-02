@@ -3,13 +3,14 @@ import { getAllLessonIds, getLessonData } from "../../lib/posts";
 import Date from "../../components/date";
 import Head from "next/head";
 import utilStyles from "../../styles/utils.module.css";
+import Link from "next/link";
 
 export async function getStaticProps({ params }) {
-  const postData = await getLessonData(params.id);
+  const lessonData = await getLessonData(params.id);
 
   return {
     props: {
-      postData,
+      lessonData,
     },
   };
 }
@@ -22,19 +23,36 @@ export async function getStaticPaths() {
   };
 }
 
-export default function Lesson({ postData }) {
+export default function Lesson({ lessonData }) {
   return (
     <Layout>
       <Head>
-        <title>{postData.title}</title>
+        <title>{lessonData.title}</title>
       </Head>
       <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+        <h1 className={utilStyles.headingXl}>{lessonData.title}</h1>
         <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
+          <Date dateString={lessonData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
+        <div dangerouslySetInnerHTML={{ __html: lessonData.contentHtml }} />
       </article>
+      {lessonData.prev != "" && (
+        <Link href={`/lesson/${lessonData.prev}`}>
+          <a>Previous</a>
+        </Link>
+      )}
+      {lessonData.prev == "" && (
+        <Link href={`/course/${lessonData.course}`}>
+          <a>Back to Course</a>
+        </Link>
+      )}
+
+      <br />
+      {lessonData.next != "" && (
+        <Link href={`/lesson/${lessonData.next}`}>
+          <a>Next</a>
+        </Link>
+      )}
     </Layout>
   );
 }

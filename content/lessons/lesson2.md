@@ -1,11 +1,13 @@
 ---
-id: "lesson3"
-title: "Kubernetes For Beginners Lesson 3"
+id: "lesson2"
+title: "Kubernetes For Beginners Lesson 2"
+course: "kubernetes-for-beginners"
 description: "description"
+duration: "5"
 type: "lecture"
 date: "2020-01-01"
-prev: "lesson2"
-next: ""
+prev: "lesson1"
+next: "lesson3"
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
