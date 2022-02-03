@@ -13,6 +13,13 @@
       "id": "kubernetes-concepts",
       "date": "2021-01-04",
       "lessons": "4"
+    },
+    {
+      "duration": "120",
+      "title": "Test Course",
+      "id": "test-course",
+      "date": "2021-01-04",
+      "lessons": "0"
     }
   ]
 }
