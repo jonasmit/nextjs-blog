@@ -1,7 +1,6 @@
 ---
 id: "lesson2"
 title: "Kubernetes For Beginners Lesson 2"
-course: "kubernetes-for-beginners"
 description: "description"
 duration: "5"
 type: "lecture"

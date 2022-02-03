@@ -1,7 +1,6 @@
 ---
 id: "lessonabc"
 title: "Lesson ABC"
-course: "tbd"
 description: "description"
 duration: "5"
 type: "lecture"
