@@ -2,7 +2,7 @@ import Layout from "../../components/layout";
 import utilStyles from "../../styles/utils.module.css";
 import Duration from "../../components/duration";
 import Link from "next/link";
-import { getCourseData, getAllCourseIds } from "../../lib/posts";
+import { getCourseData, getAllCourseIds } from "../../lib/courses";
 
 export function getStaticProps({ params }) {
   //const courseData = content.courses.find((element) => element.id == params.id);

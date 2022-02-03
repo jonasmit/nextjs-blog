@@ -4,7 +4,7 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import Date from "../components/date";
 import Duration from "../components/duration";
-import { getSortedCourseData } from "../lib/posts";
+import { getSortedCourseData } from "../lib/courses";
 
 export default function Home({ allCourseData }) {
   return (

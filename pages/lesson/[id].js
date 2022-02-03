@@ -1,5 +1,5 @@
 import Layout from "../../components/layout";
-import { getAllLessonIds, getLessonData } from "../../lib/posts";
+import { getAllLessonIds, getLessonData } from "../../lib/courses";
 import Date from "../../components/date";
 import Head from "next/head";
 import utilStyles from "../../styles/utils.module.css";
