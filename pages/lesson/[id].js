@@ -41,11 +41,6 @@ export default function Lesson({ lessonData }) {
           <a>Previous</a>
         </Link>
       )}
-      {lessonData.prev == "" && (
-        <Link href={`/course/${lessonData.course}`}>
-          <a>Back to Course</a>
-        </Link>
-      )}
 
       <br />
       {lessonData.next != "" && (

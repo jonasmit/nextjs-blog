@@ -6,7 +6,7 @@ duration: "5"
 type: "lab"
 date: "2020-01-01"
 prev: "lesson2"
-next: "lesson3"
+next: "lesson4"
 ---
 
 Next.js has two forms of pre-rendering: **Static Generation** and **Server-side Rendering**. The difference is in **when** it generates the HTML for a page.
