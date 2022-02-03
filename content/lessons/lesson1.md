@@ -1,7 +1,7 @@
 ---
 id: "lesson1"
 title: "Kubernetes For Beginners Lesson 1"
-description: "description"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae et leo duis ut diam. "
 duration: "5"
 type: "lecture"
 date: "2022-01-01"

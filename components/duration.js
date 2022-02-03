@@ -1,3 +1,6 @@
+// import the icons you need
+import { faVideo } from "@fortawesome/free-solid-svg-icons";
+
 export default function Duration({ durationInMinutes }) {
   var h = Math.floor(durationInMinutes / 60);
   var m = durationInMinutes % 60;

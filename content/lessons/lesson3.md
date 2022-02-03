@@ -1,9 +1,9 @@
 ---
 id: "lesson3"
 title: "Kubernetes For Beginners Lesson 3"
-description: "description"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae et leo duis ut diam. "
 duration: "5"
-type: "lecture"
+type: "lab"
 date: "2020-01-01"
 prev: "lesson2"
 next: "lesson3"

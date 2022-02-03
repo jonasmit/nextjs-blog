@@ -1,7 +1,7 @@
 ---
 id: "lessonabc"
 title: "Lesson ABC"
-description: "description"
+description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae et leo duis ut diam. "
 duration: "5"
 type: "lecture"
 date: "2020-01-01"

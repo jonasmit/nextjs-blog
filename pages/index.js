@@ -35,7 +35,7 @@ export default function Home({ allCourseData }) {
                 </small>
                 <br />
                 <small className={utilStyles.lightText}>
-                  Lessons: {lessons}
+                  Lessons: {lessons.length}
                 </small>
               </li>
             )
@@ -48,7 +48,6 @@ export default function Home({ allCourseData }) {
 
 export async function getStaticProps() {
   const allCourseData = getSortedCourseData();
-  console.log(allCourseData);
   return {
     props: {
       allCourseData,
