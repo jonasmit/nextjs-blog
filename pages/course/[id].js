@@ -5,10 +5,7 @@ import Link from "next/link";
 import { getCourseData, getAllCourseIds } from "../../lib/courses";
 
 export function getStaticProps({ params }) {
-  //const courseData = content.courses.find((element) => element.id == params.id);
-
   const courseData = getCourseData(params.id);
-  console.log(courseData);
 
   return {
     props: {
@@ -29,7 +26,7 @@ export function getStaticPaths() {
 export default function Course(courseData) {
   return (
     <Layout>
-      <p>Course: {courseData.title}</p>
+      <h1 className={utilStyles.headingXl}>Course: {courseData.title}</h1>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Lessons</h2>
         <ul className={utilStyles.list}>
