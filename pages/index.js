@@ -5,6 +5,7 @@ import Link from "next/link";
 import Date from "../components/date";
 import Duration from "../components/duration";
 import { getSortedCourseData } from "../lib/courses";
+import Image from "next/image";
 
 export default function Home({ allCourseData }) {
   return (
@@ -12,15 +13,12 @@ export default function Home({ allCourseData }) {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p>Hello, I'm Jon.</p>
-      </section>
 
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Featured Courses</h2>
         <ul className={utilStyles.list}>
           {allCourseData.map(
-            ({ id, date, title, description, duration, lessons }) => (
+            ({ id, date, title, description, image, duration, lessons }) => (
               <li className={utilStyles.listItem} key={id}>
                 <small className={utilStyles.lightText}>
                   Duration: <Duration durationInMinutes={duration} />
@@ -36,7 +34,14 @@ export default function Home({ allCourseData }) {
                 <br />
                 <small className={utilStyles.lightText}>
                   Lessons: {lessons.length}
-                </small>
+                </small>{" "}
+                <br />
+                <Image
+                  src={image}
+                  alt="Course Image"
+                  height={144}
+                  width={144}
+                />
               </li>
             )
           )}

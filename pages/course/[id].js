@@ -6,6 +6,7 @@ import { getCourseData, getAllCourseIds } from "../../lib/courses";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import the icons you need
 import { faVideo, faFlask, faClock } from "@fortawesome/free-solid-svg-icons";
+import Image from "next/image";
 
 export function getStaticProps({ params }) {
   const courseData = getCourseData(params.id);
@@ -30,6 +31,12 @@ export default function Course(courseData) {
   return (
     <Layout>
       <h1 className={utilStyles.headingXl}>Course: {courseData.title}</h1>
+      <Image
+        src={courseData.image}
+        alt="Course Image"
+        height={144}
+        width={144}
+      />
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Lessons</h2>
         <ul className={utilStyles.list}>

@@ -5,4 +5,5 @@ description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do ei
 date: "2022-01-01"
 duration: "98"
 lessons: ["lesson1", "lesson2", "lesson3", "lesson4"]
+image: "/images/kubernetes.png"
 ---
