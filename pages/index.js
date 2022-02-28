@@ -21,7 +21,7 @@ export default function Home({ allCourseData }) {
             ({ id, date, title, description, image, duration, lessons }) => (
               <li className={utilStyles.listItem} key={id}>
                 <small className={utilStyles.lightText}>
-                  Duration: <Duration durationInMinutes={duration} />
+                  Test Duration: <Duration durationInMinutes={duration} />
                 </small>
                 <br />
                 <Link href={`/course/${id}`}>
